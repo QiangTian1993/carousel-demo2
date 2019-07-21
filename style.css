@@ -1,0 +1,132 @@
+h1, h2, a, span, ul, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    background: #fafafa;
+    font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+section {
+    text-align: center;
+    color: #111;
+    padding-top: 76px;
+}
+
+section>h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+section>h1 {
+    font-size: 52px;
+    padding-top: 8px;
+    padding-left: 34px;
+}
+
+.window {
+    /* width: 1230px; */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.window .imgs {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    transform: translateX(0, 0);
+    transition: transform .5s linear;
+}
+
+.window a {
+    text-align: center;
+}
+
+.window a img {
+    object-fit: cover;
+}
+
+nav {
+    width: 100%;
+    background: #f6f6f6;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+nav::before {
+    content: '';
+    display: block;
+    border: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid #f6f6f6;
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 10;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    /* width: 10px; */
+    border: 10px solid rgba(0, 0, 0, 0);
+    border-top: 10px solid #f0f0f0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -20px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav>ul>li {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav li>figure {
+    margin: 0 40px 10px;
+    width: 52px;
+    height: 54px;
+    background-size: 52px 54px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.apple.com/v/mac/home/ah/images/familybrowser/macbookair__ej39du0gz4uq_large.svg")
+}
+
+nav li:nth-child(2)>figure {
+    background-image: url("https://www.apple.com/v/mac/home/ah/images/familybrowser/macbookpro__enfip2k1cxkm_large.svg")
+}
+
+nav li:nth-child(3)>figure {
+    background-image: url("https://www.apple.com/v/mac/home/ah/images/familybrowser/imac__dkswmjfqeziq_large.svg")
+}
+
+nav li:nth-child(4)>figure {
+    background-image: url("https://www.apple.com/v/mac/home/ah/images/familybrowser/imac_pro__eer4bfwlutme_large.svg")
+}
+
+nav li>span:hover {
+    color: #0070c9;
+}
