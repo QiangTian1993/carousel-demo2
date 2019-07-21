@@ -1,7 +1,7 @@
 let navList = $('nav li')
 let index
 let n = 0
-let imgUrl = ['/images/macbook.png', 'images/mackookpro.png', 'images/imac.png', 'images/imcpro.png']
+let imgUrl = ['./images/macbook.png', './images/mackookpro.png', './images/imac.png', './images/imcpro.png']
 let titles = [{ 'h2': 'MacBook Air', 'h1': '轻轻地，再次倾心。' }, { 'h2': 'MacBook Pro', 'h1': '更强劲的，更专业的。' }, { 'h2': 'iMac', 'h1': '外形过分，实力过分。' }, { 'h2': 'iMac Pro', 'h1': '强大，大有专业风范。' }]
 for (let i = 0; i < imgUrl.length; i++) {
     $('.window .imgs').append(`<a> <img src='${imgUrl[i]}'>`)
