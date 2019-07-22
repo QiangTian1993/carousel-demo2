@@ -78,7 +78,7 @@ nav::before {
     position: absolute;
     top: 99%;
     left: 50%;
-    margin-left: -20px;
+    margin-left: -10px;
     z-index: 10;
 }
 
@@ -91,7 +91,7 @@ nav::after {
     position: absolute;
     top: 100%;
     left: 50%;
-    margin-left: -20px;
+    margin-left: -10px;
 }
 
 nav>ul {

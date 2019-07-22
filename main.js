@@ -27,7 +27,6 @@ $('nav ul').on('click', 'li', (e) => {
         changeWidth(index)
     }
     n = index
-
 })
 
 function initiaTransform(index) {
@@ -61,7 +60,6 @@ function changeWidth(index) {
             $('.window .imgs').css({
                 transform: `translateX(-${(index + 1) * pageWdith}px)`,
             })
-
         }
     })
 }
